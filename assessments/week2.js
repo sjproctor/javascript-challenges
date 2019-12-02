@@ -77,8 +77,7 @@ console.log(alphabetSoup(testString3))
 // 4b. Write a function that takes in all three variables and returns a string with all the letters in alphabetical order. Expected output: "aaaacddeeegilmnnorsy"
 
 allTheLetters = (...strings) => {
-  let comboArray = [...strings]
-  return comboArray.join("").split("").sort().join("")
+  return strings.join("").split("").sort().join("")
 }
 console.log(allTheLetters(testString1, testString2, testString3))
 
