@@ -1,4 +1,4 @@
-# Unit 1 and 2: JavaScript Challenges
+# Unit 1: JavaScript Challenges
 
 ## Challenges for Vanilla JavaScript at LEARN Academy, San Diego
 
