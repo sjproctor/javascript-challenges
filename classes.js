@@ -78,7 +78,8 @@ class Cylinder{
     this.radius = radius
   }
   calculateVolume(){
-    let pi = Math.PI
+    // creating a variable that holds pi, and rounds the float to 4 decimal places
+    let pi = parseFloat(Math.PI.toFixed(4))
     let volume = pi*this.radius*2*this.height
     return `The volume is ${volume}.`
   }
