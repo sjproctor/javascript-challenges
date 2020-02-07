@@ -19,6 +19,7 @@
 - [Template Literal](./templateLiteral.js)
 
 ## JavaScript Assessments
-- [Week 1 - Intro](./assessments/week1.js)
+- [Week 1 - Intro Code](./assessments/Week-1-Assessment/js-intro.js)
+- [Week 1 - Intro Testing](./assessments/Week-1-Assessment/js-testing.test.js)
 - [Week 2 - Foundations](./assessments/week2.js)
 - [Week 3 - Intermediate](./assessments/week3.js)
