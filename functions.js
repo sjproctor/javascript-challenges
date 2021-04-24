@@ -1,23 +1,20 @@
 // Challenges
-// DON'T FORGET TO PSEUDO CODE
+// Copy the challenges into your JavaScript file. Comment out the instructions and code the solution to each problem beneath the prompt. Each solution requires pseudocode. Test your functions with multiple function calls.
 
-// Write a function named marco that returns "polo".
-console.log("---------1 \n")
-function marco(){
+// 1. Write a function named `marco` that returns "polo".
+const marco = () => {
   return "polo"
 }
 console.log(marco())
 
-// Write a function named greeting that takes a name as an argument and returns "Welcome, <person's name here>!"
-console.log("---------2 \n")
-function greeting(name){
+// 2. Write a function named `greeting` that takes a name as an argument and returns "Welcome, <person's name here>!"
+const greeting = (name) => {
   return `Welcome, ${name}!`
 }
 console.log(greeting("Learn Student"))
 
-// Write a function named oddOrEven that takes a number as an argument and returns whether the number is odd or even.
-console.log("---------3 \n")
-function oddOrEven(number){
+// 3. Write a function named `oddOrEven` that takes a number as an argument and returns whether the number is odd or even.
+const oddOrEven = (number) => {
   if(number % 2 === 0){
     return "even"
   } else {
@@ -28,8 +25,7 @@ console.log(oddOrEven(5))
 console.log(oddOrEven(9))
 console.log(oddOrEven(10))
 
-// Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
-console.log("---------4 \n")
+// 4. Write a function named `triple` that takes a number as an argument and returns the result of that number multiplied by 3.
 triple = (number) => {
   return number * 3
 }
@@ -37,8 +33,7 @@ console.log(triple(5))
 console.log(triple(2))
 console.log(triple(4))
 
-// Write a function named multiply that takes two numbers as arguments and returns the result of one of the numbers multiplied by the other.
-console.log("---------5 \n")
+// 5. Write a function named `multiply` that takes two numbers as arguments and returns the result of the numbers multiplied together.
 multiply = (num1, num2) => {
   return num1 * num2
 }
@@ -46,8 +41,7 @@ console.log(multiply(3, 4))
 console.log(multiply(6, 9))
 console.log(multiply(4, 7))
 
-// Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
-console.log("---------5 \n")
+// 6. Write a function named `divisibleBy` that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 divisibleBy = (num1, num2) => {
   if(num1 % num2 === 0){
     return `${num1} is evenly divisible by ${num2}`
@@ -59,8 +53,7 @@ console.log(divisibleBy(10, 5))
 console.log(divisibleBy(10, 4))
 console.log(divisibleBy(10, 2))
 
-// Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
-console.log("---------6 \n")
+// 7. Write a function named `assignGrade` that takes a number score as an argument and returns the letter grade for the score.
 assignGrade = (score) => {
   if(typeof score !== "number" || score < 0 || score >= 100){
     return "please enter a valid score"
@@ -82,6 +75,16 @@ console.log(assignGrade(true))
 console.log(assignGrade(90))
 console.log(assignGrade(87))
 console.log(assignGrade(8))
+
+// 8. Write a function named `isLonger` that takes two strings as arguments and returns the string that contains the most characters.
+const isLonger = (string1, string2) => {
+  if(string1.length === string2.length) {
+    return `Both strings are ${string.length}`
+  } else if(string1.length > string2.length)
+}
+// 9. Write a function named `greaterNum` that takes two numbers as arguments and returns whichever number is the greater (higher) number.
+
+// 10. Write a function named `yelling` that takes a string as an argument and return the string in all uppercase case letters.
 
 // STRETCH Challenges
 // Test your functions with multiple calls
