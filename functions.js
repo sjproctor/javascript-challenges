@@ -79,49 +79,71 @@ console.log(assignGrade(8))
 // 8. Write a function named `isLonger` that takes two strings as arguments and returns the string that contains the most characters.
 const isLonger = (string1, string2) => {
   if(string1.length === string2.length) {
-    return `Both strings are ${string.length}`
-  } else if(string1.length > string2.length)
+    return `Both strings are ${string1.length}`
+  } else if(string1.length > string2.length) {
+    return `${string1} is longer`
+  } else if(string1.length < string2.length) {
+    return `${string2} is longer`
+  } else {
+    return "Something went wrong."
+  }
 }
+
+console.log(isLonger("hello", "hey"))
+console.log(isLonger("hello", "there"))
+console.log(isLonger("yo", "hola"))
+
 // 9. Write a function named `greaterNum` that takes two numbers as arguments and returns whichever number is the greater (higher) number.
+
+const greaterNum = (num1, num2) => {
+  if(num1 === num2) {
+    return `Both numbers are ${num1}`
+  } else if(num1 > num2) {
+    return `${num1} is larger`
+  } else if(num1 < num2) {
+    return `${num2} is larger`
+  } else {
+    return "Something went wrong."
+  }
+}
+
+console.log(greaterNum(2, 5))
+console.log(greaterNum(6, 5))
+console.log(greaterNum(42, 42))
 
 // 10. Write a function named `yelling` that takes a string as an argument and return the string in all uppercase case letters.
 
 // STRETCH Challenges
-// Test your functions with multiple calls
+// The World Translator
+// (a) Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
+// (b) Have your function default to returning English.
 
-// What number's bigger: Write a function named greaterNum that takes 2 arguments, both numbers and returns whichever number is the greater (higher) number
-console.log("---------7 \n")
-greaterNum = (num1, num2) => {
-  if(num1 === num2){
-    return "The numbers are equal"
-  } else if(num1 > num2){
-    return `${num1} is bigger`
-  } else {
-    return `${num2} is bigger`
-  }
-}
-console.log(greaterNum(3, 6))
-console.log(greaterNum(89, 0))
-console.log(greaterNum(-7, -7))
-
-// The World Translator: Write a function named helloWorld that takes 1 argument, a language code (e.g. "es", "de", "en") and returns "Hello, World" for the given language, for at least 3 languages (it should default to returning English)
-console.log("---------8 \n")
-helloWorld = (code) => {
-  if(code === "es"){
-    return "hola mundo"
-  } else if(code === "de"){
-    return "hallo welt"
-  } else {
-    return "hello world"
+const helloWorld = (code = "en") => {
+  if(code === "es") {
+    return "Hola mundo"
+  } else if(code === "de") {
+    return "Hallo welt"
+  } else if(code === "ja") {
+    return "Kon'nichiwa"
+  } else if(code === "fr") {
+    return "Bonjour"
+  } else if(code === "ru") {
+    return "Privet"
+  } else if(code === "en") {
+    return "Hello world"
   }
 }
 console.log(helloWorld("es"))
 console.log(helloWorld("de"))
-console.log(helloWorld("en"))
+console.log(helloWorld("ja"))
+console.log(helloWorld("fr"))
+console.log(helloWorld("ru"))
+console.log(helloWorld())
 
-// The Pluralizer: Write a function named pluralizer that takes 2 arguments, a number and a singular noun and returns the number and pluralized form of the noun, if necessary
-console.log("---------9 \n")
-pluralizer = (num, animal) => {
+// The Pluralizer
+// (a) Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
+
+const pluralizer = (num, animal) => {
   if(num === 1){
     return `${num} ${animal}`
   } else {
@@ -133,9 +155,9 @@ console.log(pluralizer(5, "cat"))
 console.log(pluralizer(1, "dog"))
 // Expected outcome -->> "1 dog"
 
-// Bonus: Make it handle a few collective nouns like "sheep", "geese", "children", "people" and "species"
-console.log("---------9 \n")
-bonusPluralizer = (num, noun) => {
+// (b) Enhance your function so it can handle a few collective nouns like "sheep", "goose", "child", "person" and "species".
+
+const bonusPluralizer = (num, noun) => {
   if(noun === "sheep"){
     return `${num} sheep`
   } else if(noun === "species"){
@@ -159,13 +181,3 @@ console.log(bonusPluralizer(6, "cat"))
 console.log(bonusPluralizer(4, "goose"))
 console.log(bonusPluralizer(1, "goose"))
 console.log(bonusPluralizer(5, "flamingo"))
-
-// EPIC Challenge: Magic8 Ball with HTML
-// As a user I can enter a question and get a random answer to my question.
-// Create an HTML page linked to the JavaScript file - you will need to research onClick events, document.getElementById() and innerHTML.
-// More information about linking HTML to JavaScript here
-magic8 = () => {
-  let magic = ["Yup", "Nope", "Heck, yes", "Yaaaas", "Umm...sure?", "Great"]
-  let random = Math.floor(Math.random() * magic.length)
-  document.getElementById("answer").innerHTML = magic[random]
-}
