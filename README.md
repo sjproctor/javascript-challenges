@@ -1,6 +1,6 @@
 # Unit 1: JavaScript Challenges
 
-## Challenges for Vanilla JavaScript at LEARN Academy, San Diego
+**Challenges for Vanilla JavaScript at LEARN Academy, San Diego**
 
 - [Intro to JavaScript](./intro.js)
 - [JavaScript Conditionals](./conditionals.js)
@@ -14,6 +14,6 @@
 - [JavaScript Classes](./classes.js)
 - [JavaScript Inheritance](./inheritance.js)
 
-## Mini Topics
+**Mini Topics**
 - [Spread Syntax](./spreadSyntax.js)
 - [Template Literal](./templateLiteral.js)
